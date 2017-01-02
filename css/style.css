@@ -1,0 +1,160 @@
+@import url(reset.css);
+body {
+	margin: 0;         /*сброс всех отступов*/
+	padding: 0;
+}
+/* Wrapper */
+
+#wrapper {
+	width: 1920px;
+	margin: 0px;
+	padding: 0px;
+	background: white;
+}
+
+/* Header */
+#header {
+	width: 1920px;
+	margin: 0 auto;
+	height: 120px;
+	background: #888888;
+}
+
+#header .logo {
+   	width: 87px;
+	height: 87px; 
+	margin: 0 auto;
+	padding: 5px 0px 0px 5px;
+    float: left;
+}
+.logo a {
+	text-decoration: none;
+	color: white;	
+}
+	
+#header .contacts {
+    float: left;
+    text-align: left;
+    margin-top: 28px;
+}
+
+.contacts a , h1{
+	text-decoration: none;
+	color: white;
+	font: bold 17px Arial, Verdana;  
+}
+
+
+
+h1{	margin: 0 auto;
+	padding: 0px 0px 0px 15px;
+}
+
+/* Menu */
+
+#menu{
+    height: 30px;
+    width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(../images/bg_2.png) no-repeat;
+	clear: both;  /*отмена обтекания*/
+}
+
+#menu ul {
+	margin: 0;
+	padding-left: 0px;
+	color: white;
+	overflow: hidden;
+}
+
+#menu ul li {
+	float: left;
+	display: inline;
+	padding-top: 2px;
+}
+
+#menu ul li a {
+	margin: 0;
+	padding: 0px 19px;
+	text-decoration: none;
+	color: white;
+	font: bold 14px Arial, Verdana;
+	
+}
+
+.menu {
+  width: 80%;
+  max-width: 2500px;
+  box-shadow: 0 5px 18px #666666, 0 5px 5px #666666;
+}
+
+/* Page */
+
+#page {
+	width: 1920px;
+	height: 814px;
+	margin-top: 9px;
+	padding: 0px;
+}
+
+/* Sidebars */
+#sidebar1 {
+	float: left;
+	width: 180px;
+	height: 814px;
+	background: #999999;
+}
+
+.sidebar ul {
+	padding-left: 12px;
+	padding-top: 7px;
+	overflow: hidden;
+	list-style: none;
+}
+
+
+.sidebar ul li {
+	padding: 0px 0 11px 0;
+	
+ }
+
+.sidebar ul li a {
+	color: black;
+	background: white;
+	border-radius: 7px 0 0 7px ; /* закругление углов для всех, кто понимает */
+	padding: 6px 40px 6px 10px; /* внутренние отступы */
+	font: 14px Arial, Verdana;
+	text-decoration: none; 
+}		
+
+#content {
+	float: left;
+	width: 1560px; 
+	height: 814px;
+}
+
+#content ul {
+	padding-top: 10px;
+}	
+#content ul  li{
+	padding: 0 0 7px 25px;
+	overflow: hidden;
+	list-style: none;
+	color: black;
+	font: 14px Arial, Verdana;
+	
+}
+
+#content ul li span{						
+	color: #FF0000;
+}
+
+#sidebar2 {
+	float: right;
+	width: 180px;
+	height: 814px;
+	background: #999999;
+}
+
+
