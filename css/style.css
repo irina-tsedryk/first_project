@@ -1,160 +1,140 @@
 @import url(reset.css);
-body {
-	margin: 0;         /*сброс всех отступов*/
-	padding: 0;
-}
+/*http://ruseller.com/shporacss.php?id=2*/
+/*http://html5.by/blog/flexbox/*/
 /* Wrapper */
 
-#wrapper {
+body
+
+.wrapper {
 	width: 1920px;
-	margin: 0px;
-	padding: 0px;
-	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
 }
 
 /* Header */
-#header {
+.header {
 	width: 1920px;
-	margin: 0 auto;
 	height: 120px;
 	background: #888888;
 }
-
-#header .logo {
+.logo {
    	width: 87px;
 	height: 87px; 
-	margin: 0 auto;
-	padding: 5px 0px 0px 5px;
+	padding: 3px;
     float: left;
 }
-.logo a {
-	text-decoration: none;
-	color: white;	
-}
-	
-#header .contacts {
-    float: left;
-    text-align: left;
-    margin-top: 28px;
+.contacts ul{
+    padding-left: 3px;
+	padding-top: 10px;
+	overflow: hidden;
+	list-style: none;
 }
 
-.contacts a , h1{
+.contacts li{
+	text-align: left;
 	text-decoration: none;
 	color: white;
-	font: bold 17px Arial, Verdana;  
-}
-
-
-
-h1{	margin: 0 auto;
-	padding: 0px 0px 0px 15px;
-}
+	font: bold 17px Arial, Verdana;
+	padding:  0 0 20px 0;	
+	}
 
 /* Menu */
 
-#menu{
+.menu{
     height: 30px;
     width: 1920px;
-	margin: 0 auto;
-	padding: 0;
 	background: url(../images/bg_2.png) no-repeat;
 	clear: both;  /*отмена обтекания*/
+	max-width: 2500px;
+    box-shadow: 0 5px 18px #666666, 0 5px 5px #666666;
 }
 
-#menu ul {
-	margin: 0;
-	padding-left: 0px;
-	color: white;
+.menu ul {
 	overflow: hidden;
+	list-style: none;
 }
 
-#menu ul li {
-	float: left;
+.menu li {
 	display: inline;
-	padding-top: 2px;
+	padding-top: 4px;
 }
 
-#menu ul li a {
-	margin: 0;
+.menu  a {
 	padding: 0px 19px;
 	text-decoration: none;
 	color: white;
 	font: bold 14px Arial, Verdana;
-	
-}
-
-.menu {
-  width: 80%;
-  max-width: 2500px;
-  box-shadow: 0 5px 18px #666666, 0 5px 5px #666666;
 }
 
 /* Page */
 
-#page {
+.page {
 	width: 1920px;
 	height: 814px;
 	margin-top: 9px;
-	padding: 0px;
+	display: flex;
+	flex-flow: row nowrap;
 }
 
 /* Sidebars */
-#sidebar1 {
-	float: left;
-	width: 180px;
-	height: 814px;
+.sidebar_first {
+	flex-basis: 180px;
 	background: #999999;
+	order: 1;
+	align-self: stretch;
 }
 
-.sidebar ul {
-	padding-left: 12px;
-	padding-top: 7px;
+.sidebar_first ul {
+	padding-left: 15px;
+	padding-top: 17px;
 	overflow: hidden;
 	list-style: none;
 }
 
+.sidebar_first li {
+	padding: 0px 0 15px 0;
+}
 
-.sidebar ul li {
-	padding: 0px 0 11px 0;
-	
- }
-
-.sidebar ul li a {
+.sidebar_first a {
 	color: black;
-	background: white;
-	border-radius: 7px 0 0 7px ; /* закругление углов для всех, кто понимает */
-	padding: 6px 40px 6px 10px; /* внутренние отступы */
 	font: 14px Arial, Verdana;
+	background: white;
+	border-radius: 7px 0 0 7px ; /* закругление углов */
+	padding: 6px 40px 6px 10px; /* внутренние отступы */
 	text-decoration: none; 
 }		
 
-#content {
-	float: left;
-	width: 1560px; 
-	height: 814px;
+.content {
+	flex-basis: 1560px;
+	order: 2;
+	align-self: stretch;	
 }
 
-#content ul {
-	padding-top: 10px;
-}	
-#content ul  li{
-	padding: 0 0 7px 25px;
+.content ul {
+	padding-top: 28px;
+	padding-left: 28px;
 	overflow: hidden;
 	list-style: none;
+}	
+.content  li{
+	padding: 0 0 0 25px;
 	color: black;
 	font: 14px Arial, Verdana;
-	
+	}
+
+.my:first-letter{color: red;}
+
+p {
+padding: 0 0 10px 0;
 }
 
-#content ul li span{						
-	color: #FF0000;
-}
-
-#sidebar2 {
-	float: right;
-	width: 180px;
-	height: 814px;
+.sidebar_second {
+	flex-basis: 180px;
 	background: #999999;
+	order: 3;
+	align-self: stretch;	
 }
 
 
