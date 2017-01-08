@@ -1,16 +1,8 @@
 @import url(reset.css);
 /* Wrapper */
-.wrapper {
-	width: 1220px;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	justify-content: flex-start;
-}
 
 /* Header */
 .header {
-	width: 1220px;
 	height: 133px;
 	background: #888888;
 }
@@ -43,7 +35,7 @@
 	margin-top: 0px;
 	clear: both; 
 	height: 30px;
-    width: 1220px;
+  /*  width: 1220px;*/
 	background: url(../images/bg_2.png) no-repeat;
 	 
 	max-width: 2500px;
@@ -97,20 +89,17 @@ ul {
 /* Page */
 
 .page {
-	width: 1220px;
-	height: 814px;
+	overflow: hidden;
 	margin-top: 9px;
-	display: flex;
-	flex-flow: row nowrap;
 }
+
 
 /* Sidebars */
 .sidebar_first {
-	display: inline-block;
-	flex-basis: 180px;
+	float: left;
+	width: 180px;
+	height: 814px;
 	background: #999999;
-	order: 1;
-	align-self: stretch;
 }
 
 .sidebar_first ul {
@@ -145,7 +134,8 @@ ul {
 .subnav_left {
     display: none;
 	position: absolute;
-    width: 70px;
+    z-index: 1000;
+	width: 70px;
 	left: 153px;
 	top: 0px;
 	z-index: 100;
@@ -166,12 +156,9 @@ ul {
 
 
 .content {
-	display: inline-block;
-	width: 50%; 
-	flex-basis: 860px;
-	order: 2;
-	align-self: stretch;	
-	background: white;
+	margin: 0 180px 0 180px;
+	height: 814px;
+    background: white;
 	font: 14px Arial, Verdana;
 	color: black;
 }
@@ -193,12 +180,12 @@ p {
 padding: 0 0 10px 0;
 }
 
-.sidebar_second {
-	display: inline-block;
-	flex-basis: 180px;
+.sidebar_second { 
+	margin: -814px 0 0 0;
+	width: 180px;
+	height: 814px;
 	background: #999999;
-	order: 3;
-	align-self: stretch;	
+	float: right;
 }
 
 

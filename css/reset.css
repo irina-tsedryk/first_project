@@ -2,33 +2,33 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline: 0;                               /* обнул€ем отступы и убираем бордюры */
-	vertical-align: baseline;          /* приводим все к одной базовой линии */
-	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
-	font-size: 100%;                     /* размер шрифта всем одинаковый */
+	outline: 0;                               
+	vertical-align: baseline;          
+	background: transparent;      
+	font-size: 100%;                     
 }
-a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+a {                                      
 	margin:0;
 	padding:0;
 	font-size:100%;
 	vertical-align:baseline;
 	background:transparent;
 }
-table {						/* устран€ем отступы между €чейками таблицы */
+table {						
 	border-collapse: collapse; 
 	border-spacing: 0;
 }
 td, td img {
-	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+	vertical-align: top;			
 } 
 input, select, button, textarea {
-	margin: 0; 				/* убираем отступы по умолчанию дл€ элементов форм (в частности дл€ checkbox и radio) */
-	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	margin: 0; 				
+	font-size: 100%; 			
 }
 input[type="text"], input[type="password"], textarea {
-	padding: 0; 				/* убираем внутренние отступы дл€ текстовых полей */
+	padding: 0; 				
 }
-input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+input[type="checkbox"] { 		
 	vertical-align: bottom;
 }
 input[type="radio"] {
@@ -50,24 +50,24 @@ nav ul {
 }
 /* --------------- /reset.css --------------- */
 
-/* --------------- базовые настройки ---------*/
+
 html {
-	overflow-y: scroll; /* всегда показываем вертикальную полосу прокрутки  */
+	overflow-y: scroll; 
 }
 body {
 	line-height: 1;
 	background: #fff;
 	color: #000;
 	text-align: left;
-	font: 14px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; /* используем безопасные шрифтовые CSS стеки */
+	font: 14px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; 
 }
 input, select, button, textarea {
-	font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; /* чтобы шрифт был такой же как и везде */
+	font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; 
 }
 label, input[type="button"], input[type="submit"], button {
-	cursor: pointer; /* курсор в виде руки дл€ всех кликабельных элементов форм */
+	cursor: pointer; 
 }
-a, a:visited { /* пор€док правил дл€ ссылок имеет значение */
+a, a:visited { 
 	color: #287fc3;
 	text-decoration: underline;
 }
@@ -80,4 +80,3 @@ a:focus, a:active {
 	text-decoration: underline;
 }
 
-/* --------------- /базовые настройки ---------*/
