@@ -35,7 +35,7 @@
 	margin-top: 0px;
 	clear: both; 
 	height: 30px;
-  /*  width: 1220px;*/
+    min-width: 585px; 
 	background: url(../images/bg_2.png) no-repeat;
 	 
 	max-width: 2500px;
@@ -72,16 +72,15 @@ ul {
 	background-color: #999999;
     width: 150px;
     box-shadow: 5px 5px 8px -1px black;
-	z-index: 200;
-	}
+}
 
-.subnav li a {
+.subnav a {
     display: block;
     color: white;
     text-decoration: none;
 }
 
-.subnav li a:hover {text-decoration: underline;}
+.subnav a:hover {text-decoration: underline;}
 
 .nav li:hover .subnav {display: block;}
 
@@ -89,8 +88,8 @@ ul {
 /* Page */
 
 .page {
-	overflow: hidden;
 	margin-top: 9px;
+	min-width: 585px;
 }
 
 
@@ -103,9 +102,8 @@ ul {
 }
 
 .sidebar_first ul {
-	padding-left: 15px;
-	padding-top: 79px;
-	overflow: hidden;
+	margin-left: 15px;
+	margin-top: 79px;
 	list-style: none;
 }
 
@@ -122,9 +120,10 @@ ul {
     color: black;
 	font: 14px Arial, Verdana;
 	text-decoration: none;
-	border-radius: 7px 0 0 7px ; 
+	border-radius: 7px 0 0 7px;
 	padding: 6px 40px 6px 10px; 
-	}
+} 
+
 
 .nav_left  li a:hover {
     background-color: black;
@@ -132,22 +131,19 @@ ul {
 }
 
 .subnav_left {
-    display: none;
-	position: absolute;
-    z-index: 1000;
-	width: 70px;
-	left: 153px;
-	top: 0px;
-	z-index: 100;
-	background-color: black;
-	text-decoration: none;
+   display: none;
+   	position: absolute;
+    width: 70px;
+	left: 139px;
+	top: -79px;
+	background: black;
 }
 
 .subnav_left li a {
     display: block;
-    padding: 6px;
+    padding: 2px;
     color: white;
-    text-decoration: none;
+    background: black;
 }
 
 .subnav_left li a:hover {text-decoration: underline;}
@@ -187,5 +183,3 @@ padding: 0 0 10px 0;
 	background: #999999;
 	float: right;
 }
-
-
